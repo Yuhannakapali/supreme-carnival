@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "node index.js"
+    "start": "node",
+    "dev": "tsx watch src"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^4.24.3"
+    "fastify": "^4.24.3",
+    "tsx": "^4.1.1"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",

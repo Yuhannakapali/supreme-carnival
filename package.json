@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:backend" : "npm run build --workspace=backend",
+    "dev:backend" : "npm run dev --workspace=backend",
+    "dev:client" : "npm run dev --workspace=client"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "backend"
+    "backend",
+    "client"
   ]
 }

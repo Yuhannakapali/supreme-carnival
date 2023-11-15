@@ -1,6 +1,8 @@
 import fastify from "fastify";
 
-export const server = fastify();
+export const server = fastify({
+  logger: { level: 'info' } 
+});
 
 server.get("/",  (request, reply) => {
   return {

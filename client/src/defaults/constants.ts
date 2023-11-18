@@ -1,3 +1,3 @@
-export const DefaultConstant = {
-    User: "user",
-};
+export const enum DefaultConstant {
+    User = "user",
+}

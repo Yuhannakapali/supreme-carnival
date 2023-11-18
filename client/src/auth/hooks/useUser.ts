@@ -1,6 +1,6 @@
+import { useContext } from "react";
 import { DefaultConstant } from "@/defaults";
 import { useLocalStorage } from "@/auth/hooks/useLocalStorage";
-import { useContext } from "react";
 import { AuthContext } from "@/auth/context";
 
 export const useUser = () => {

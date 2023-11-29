@@ -52,6 +52,5 @@ export const runServer = (port: number = 3001) => {
             console.error(err);
             process.exit(1);
         }
-        console.log(`Server listening at ${address}`);
     });
 };

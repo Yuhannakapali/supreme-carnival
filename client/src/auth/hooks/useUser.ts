@@ -6,7 +6,7 @@ import { AuthContext } from "@/auth/context";
 export const useUser = () => {
     const { user, setUser } = useContext(AuthContext);
     const { setItem } = useLocalStorage();
-    const addUser = (user: User) => {
+    const addUser = (user: User | null) => {
         setItem(DefaultConstant.User, JSON.stringify(user));
         setUser(user);
     };
